@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    fontFamily: 'Berkshire Swash',
+    fontWeight: 'bold',
   },
   backgroundColor: {
     background: '#FCFCFC',
@@ -37,8 +39,8 @@ export default function AppBarMenu() {
           <IconButton edge='start' className={classes.menuButton} color='inherit' aria-label='menu'>
             <MenuIcon />
           </IconButton>
-          <Typography variant='h6' className={classes.title}>
-            Roommate Finder
+          <Typography variant='h5' className={classes.title}>
+            Roomy
           </Typography>
           <Button color='inherit'>Map</Button>
         </Toolbar>

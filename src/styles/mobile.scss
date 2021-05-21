@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/berkshireswash/v9/ptRRTi-cavZOGqCvnNJDl5m5XmN_qs4zT305QQ.woff2) format('woff2');
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -14,5 +22,10 @@
 
 .page-content {
   width: 100%;
-  height: calc(100% - 56px);
+  position: fixed;
+  top: 56px;
+  bottom: 56px;
+  left: 0px;
+  width: 100%;
+  overflow: auto;
 }

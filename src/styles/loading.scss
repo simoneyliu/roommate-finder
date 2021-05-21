@@ -1,0 +1,18 @@
+.loading-page {
+  background-color: #2a5fdf;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.app-name {
+  font-family: 'Berkshire Swash';
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+}
