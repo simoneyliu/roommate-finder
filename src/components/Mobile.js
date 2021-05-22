@@ -45,25 +45,30 @@ export function Mobile() {
   const classes = useStyles();
 
   return (
-    <div className='page-mobile'>
-      {loading ? <Loading isLoading={handleGetStarted} /> : ''}
-      <AppBarMenu />
-      <div className='page-content'>{routeToPage()}</div>
-      <div className='footer'>
-        <BottomNavigation
-          value={value}
-          onChange={handlePageChange}
-          showLabels
-          classes={{
-            root: classes.root,
-          }}
-          className='MuiPaper-elevation4'>
-          <BottomNavigationAction label='Home' icon={<FontAwesomeIcon icon={faHome} />} />
-          <BottomNavigationAction label='Search' icon={<FontAwesomeIcon icon={faSearch} />} />
-          <BottomNavigationAction label='Inbox' icon={<FontAwesomeIcon icon={faInbox} />} />
-          <BottomNavigationAction label='Profile' icon={<FontAwesomeIcon icon={faUser} />} />
-        </BottomNavigation>
-      </div>
-    </div>
+    <>
+      {loading ? (
+        <Loading isLoading={handleGetStarted} />
+      ) : (
+        <div className='page-mobile'>
+          <AppBarMenu />
+          <div className='page-content'>{routeToPage()}</div>
+          <div className='footer'>
+            <BottomNavigation
+              value={value}
+              onChange={handlePageChange}
+              showLabels
+              classes={{
+                root: classes.root,
+              }}
+              className='MuiPaper-elevation4'>
+              <BottomNavigationAction label='Home' icon={<FontAwesomeIcon icon={faHome} />} />
+              <BottomNavigationAction label='Search' icon={<FontAwesomeIcon icon={faSearch} />} />
+              <BottomNavigationAction label='Inbox' icon={<FontAwesomeIcon icon={faInbox} />} />
+              <BottomNavigationAction label='Profile' icon={<FontAwesomeIcon icon={faUser} />} />
+            </BottomNavigation>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
