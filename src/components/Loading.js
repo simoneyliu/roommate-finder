@@ -25,6 +25,20 @@ export function Loading(props) {
     }
   };
 
+  const showCityState = () => {
+    if (zip) {
+      return (
+        <div className='zip-info'>
+          {zip.city}, {zip.state}
+        </div>
+      );
+    } else if (isValid === 5 && !zip) {
+      return <div className='zip-info'>Not Found</div>;
+    } else {
+      return <div className='zip-info opacity-zero'>Not Found</div>;
+    }
+  };
+
   return (
     <div className='loading-page'>
       <div className='app-name'>
@@ -32,14 +46,7 @@ export function Loading(props) {
         <div className='input-icons'>
           <input onKeyUp={handleZipcode} className='input-field' type='text' pattern='\d*' placeholder='&#x1f4cc; Zipcode' maxLength='5' />
         </div>
-        {zip ? (
-          <div className='zip-info'>
-            {zip.city}, {zip.state}
-          </div>
-        ) : (
-          ''
-        )}
-        {isValid === 5 && !zip ? <div className='zip-info'>Not Found</div> : ''}
+        {showCityState()}
         <button disabled={zip ? false : true} className='get-started-button' style={{ opacity: zip ? 1 : 0.3 }} onClick={handleGetStarted}>
           Get Started
         </button>
