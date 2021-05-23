@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { CustomButton } from './CustomButton';
+import '../styles/appBarMenu.scss';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +33,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AppBarMenu() {
   const classes = useStyles();
+  const [tab, setTab] = useState(true);
+
+  const onTabClick = () => {
+    setTab(!tab);
+  };
 
   return (
     <div className={classes.root}>
@@ -44,6 +51,10 @@ export default function AppBarMenu() {
           </Typography>
           <Button color='inherit'>Map</Button>
         </Toolbar>
+        <div className='button-container'>
+          <CustomButton onTabClick={onTabClick} label='Room' isSelected={tab} isDisabled={false} />
+          <CustomButton onTabClick={onTabClick} label='Roommate' isSelected={!tab} isDisabled={false} />
+        </div>
       </AppBar>
     </div>
   );

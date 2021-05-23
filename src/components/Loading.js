@@ -13,7 +13,6 @@ export function Loading(props) {
     if (e.target.value.length === 5) {
       let zipcode = ZipCodes.lookup(e.target.value);
       if (zipcode) {
-        console.log(zipcode);
         setIsValid(true);
         setZip(zipcode);
       } else {

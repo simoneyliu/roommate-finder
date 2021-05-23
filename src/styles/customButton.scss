@@ -1,0 +1,26 @@
+.custom-button {
+  font-size: 16px;
+  font-family: inherit;
+  padding: 5px 20px;
+  width: fit-content;
+  border-radius: 20px;
+  border: none;
+}
+
+.custom-button.selected {
+  background: #2a5fdf;
+  color: white;
+}
+
+.custom-button.not-selected {
+  background: none;
+  color: black;
+}
+
+.custom-button.disabled {
+  opacity: 0.3;
+}
+
+.custom-button.enabled {
+  opacity: 1;
+}
