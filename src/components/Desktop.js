@@ -1,10 +1,11 @@
 import React from 'react';
 import mainLogo from '../assets/iPhone 12 Mockup.png';
+import '../styles/desktop.scss';
 
 export function Desktop() {
   return (
-    <div>
-      <img src={mainLogo} alt='iphone12' style={{ width: '100%' }} />
+    <div className='desktop-page'>
+      <img className='desktop-ad' src={mainLogo} alt='iphone12' />
     </div>
   );
 }
