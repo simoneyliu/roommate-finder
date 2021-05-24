@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/roommate-finder/static/css/main.18e41259.chunk.css",
-    "main.js": "/roommate-finder/static/js/main.e5545ae7.chunk.js",
-    "main.js.map": "/roommate-finder/static/js/main.e5545ae7.chunk.js.map",
-    "runtime-main.js": "/roommate-finder/static/js/runtime-main.69f18efb.js",
-    "runtime-main.js.map": "/roommate-finder/static/js/runtime-main.69f18efb.js.map",
-    "static/js/2.3fd14151.chunk.js": "/roommate-finder/static/js/2.3fd14151.chunk.js",
-    "static/js/2.3fd14151.chunk.js.map": "/roommate-finder/static/js/2.3fd14151.chunk.js.map",
-    "static/js/3.173c698c.chunk.js": "/roommate-finder/static/js/3.173c698c.chunk.js",
-    "static/js/3.173c698c.chunk.js.map": "/roommate-finder/static/js/3.173c698c.chunk.js.map",
+    "main.css": "/roommate-finder/static/css/main.f5a701bf.chunk.css",
+    "main.js": "/roommate-finder/static/js/main.a350cf1c.chunk.js",
+    "main.js.map": "/roommate-finder/static/js/main.a350cf1c.chunk.js.map",
+    "runtime-main.js": "/roommate-finder/static/js/runtime-main.d85760dd.js",
+    "runtime-main.js.map": "/roommate-finder/static/js/runtime-main.d85760dd.js.map",
+    "static/js/2.a9b4f2f5.chunk.js": "/roommate-finder/static/js/2.a9b4f2f5.chunk.js",
+    "static/js/2.a9b4f2f5.chunk.js.map": "/roommate-finder/static/js/2.a9b4f2f5.chunk.js.map",
+    "static/js/3.a5bf53f1.chunk.js": "/roommate-finder/static/js/3.a5bf53f1.chunk.js",
+    "static/js/3.a5bf53f1.chunk.js.map": "/roommate-finder/static/js/3.a5bf53f1.chunk.js.map",
     "index.html": "/roommate-finder/index.html",
-    "static/css/main.18e41259.chunk.css.map": "/roommate-finder/static/css/main.18e41259.chunk.css.map",
-    "static/js/2.3fd14151.chunk.js.LICENSE.txt": "/roommate-finder/static/js/2.3fd14151.chunk.js.LICENSE.txt",
-    "static/media/iPhone 12 Mockup.3a28092e.png": "/roommate-finder/static/media/iPhone 12 Mockup.3a28092e.png"
+    "static/css/main.f5a701bf.chunk.css.map": "/roommate-finder/static/css/main.f5a701bf.chunk.css.map",
+    "static/js/2.a9b4f2f5.chunk.js.LICENSE.txt": "/roommate-finder/static/js/2.a9b4f2f5.chunk.js.LICENSE.txt",
+    "static/media/iPhone 12 Mockup.c1cda2fa.png": "/roommate-finder/static/media/iPhone 12 Mockup.c1cda2fa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.69f18efb.js",
-    "static/js/2.3fd14151.chunk.js",
-    "static/css/main.18e41259.chunk.css",
-    "static/js/main.e5545ae7.chunk.js"
+    "static/js/runtime-main.d85760dd.js",
+    "static/js/2.a9b4f2f5.chunk.js",
+    "static/css/main.f5a701bf.chunk.css",
+    "static/js/main.a350cf1c.chunk.js"
   ]
 }
