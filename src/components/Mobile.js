@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/mobile.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInbox, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -14,6 +14,7 @@ import { Loading } from './Loading';
 export function Mobile() {
   const [value, setValue] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [rentals, setRentals] = React.useState([]);
 
   const handlePageChange = (event, newValue) => {
     setValue(newValue);
@@ -25,7 +26,7 @@ export function Mobile() {
 
   const routeToPage = () => {
     if (value === 0) {
-      return <Home />;
+      return <Home rentals={rentals} />;
     } else if (value === 1) {
       return <Search />;
     } else if (value === 2) {
@@ -43,6 +44,16 @@ export function Mobile() {
   });
 
   const classes = useStyles();
+
+  useEffect(() => {
+    fetch('http://localhost:8080/rentals')
+      .then((response) => response.json())
+      .then((response) => {
+        if (typeof response.rentals === 'object') {
+          setRentals(response.rentals);
+        }
+      });
+  }, []);
 
   return (
     <>
